@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem 'Poppins', sans-serif;
+  -webkit-font-smoothing: auto;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: var(--green42);
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+h3 {
+  color: var(--lightgray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--lightgray);
+}
+
+a span {
+  color: var(--green42);
+}
+
+a:hover {
+  color: var(--green42);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --green42: #7c953e;
+  --darkgray: #4b4b4b;
+  --lightgray: #d0d0cf;
+}
+
+.grid {
+  display: grid;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  position: fixed;
+  height: 4rem;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 100;
+  margin-top: -2rem;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 3.5rem;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  transition: color 0.3s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--green42);
+}
+
+nav ul li a:hover::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: var(--green42);
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+}
+
+nav ul li a:hover::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: var(--green42);
+  position: absolute;
+  left: 0;
+  top: -1rem;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav .menu-item {
+  font: 700 1.2rem 'Poppins', sans-serif;
+  color: var(--darkgray);
+}
+
+nav.show .menu {
+  display: grid;
+  place-content: center;
+  opacity: 1;
+  visibility: visible;
+  background: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav.show ul.grid {
+  gap: 3.5rem;
+}
+
+.toggle {
+  font-size: 1.2rem;
+  color: var(--green42);
+  cursor: pointer;
+}
+
+nav .icon-cross {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 2rem;
+}
+
+nav.show .icon-cross {
+  visibility: visible;
+  opacity: 1;
+}
+
+main {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+#banner {
+  margin-top: var(--header-height);
+  z-index: 0;
+}
+#banner .container {
+  margin: 0;
+}
+
+#highlights::before,
+#promotions::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: var(--green42);
+  left: 0;
+  position: absolute;
+}
+
+#highlights {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+#highlights .item {
+  margin: 5px;
+}
+
+.item {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.product-name {
+  color: var(--darkgray);
+  font: 500 1.2rem 'Poppins', sans-serif;
+}
+
+.product-price {
+  color: var(--green42);
+  font: 700 1.2rem 'Poppins', sans-serif;
+}
+
+#subscribe.section {
+  padding: 2rem 0.5rem;
+  background-color: var(--green42);
+}
+
+#subscribe h2 {
+  color: #ffffff;
+}
+
+input[type='email'] {
+  width: 100%;
+  height: 3rem;
+  margin: 0.5rem 0;
+  border-radius: 0.25rem;
+  font: 500 1rem 'Poppins', sans-serif;
+  border: none;
+  color: var(--darkgray);
+  padding: 1rem;
+}
+
+input[type='submit'] {
+  background-color: var(--darkgray);
+  width: 100%;
+  border: var(--darkgray);
+  border-radius: 0.5rem;
+  color: white;
+  font: 500 1rem 'Poppins', sans-serif;
+  text-transform: uppercase;
+  padding: 0rem 0rem;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  height: 3rem;
+}
+
+input:hover[type='submit'] {
+  background-color: var(--lightgray);
+  color: var(--green42);
+  font: 700 1rem 'Poppins', sans-serif;
+}
+
+#footer .container {
+  background-color: var(--darkgray);
+  text-align: center;
+  padding: 3rem 3rem;
+  margin: 0rem;
+}
+
+#footer .logo img {
+  width: 15rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+#footer p {
+  color: var(--lightgray);
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: inline-flex;
+  color: #ffffff;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+#footer .bottom {
+  background-color: #000000;
+  text-align: center;
+  color: var(--lightgray);
+  padding: 1rem;
+}

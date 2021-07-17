@@ -1,0 +1,88 @@
+/* ======== Media Queries ============ */
+@media (min-width: 1000px) {
+  #header {
+    display: inline;
+    height: 10rem;
+    text-align: center;
+  }
+
+  #header .logo img {
+    margin-left: 2rem;
+    height: 5rem;
+  }
+  #header .logo::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--green42);
+    left: 0;
+    position: absolute;
+    bottom: 4rem;
+  }
+
+  nav {
+    display: inline;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+  }
+
+  nav .menu ul {
+    display: inline-flex;
+  }
+
+  nav .menu-item {
+    font: 500 1.2rem 'Poppins', sans-serif;
+    color: var(--darkgrey);
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  #id_banner {
+    height: 90vh;
+    object-fit: cover;
+  }
+
+  #highlights,
+  #promotions .container,
+  #subscribe .container,
+  #footer .container {
+    display: flex;
+  }
+
+  #promotions .container {
+    padding: 0rem 5rem;
+  }
+
+  .section#subscribe {
+    margin-top: 5rem;
+  }
+
+  .item {
+    flex: 1;
+    margin-top: 1rem;
+  }
+  form {
+    padding: 1rem;
+  }
+  .inputbox {
+    width: 70%;
+    float: left;
+  }
+
+  .subbutton {
+    float: right;
+    width: 28%;
+  }
+  .left-grid {
+    text-align: left !important;
+  }
+  .right-grid {
+    text-align: right;
+  }
+}

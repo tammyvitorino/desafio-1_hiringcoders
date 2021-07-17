@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia do Orgulho Nerd - 42</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style-desktop.css" />
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap"
+    />
+  </head>
+  <body onLoad="slide1()">
+      <header id="header">
+      <a class="logo" href="index.html"
+          ><img src="./assets/images/logo.png"
+        /></a>
+      <nav class="container">        
+        <div class="menu" >
+          <ul class="grid">
+            <li><a class="menu-item" href="#banner">Início</a></li>
+            <li><a class="menu-item" href="#highlights">Destaques</a></li>
+            <li><a class="menu-item" href="#promotions">Promoções</a></li>
+            <li><a class="menu-item" href="#subscribe">Cadastro</a></li>
+            <li><a class="menu-item" href="#footer">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-cross"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Destaques -->
+      <section class="section" id="banner">
+        <div class="container">
+          <img id="id_banner">
+        </div>
+      </section>
+
+      <section class="section" id="highlights">
+        <div class="item"><a href="#marvel"><img src="./assets/images/funko_marvel_destaque.png" alt="Banner Destaque Marvel com foto do Funko do Thor" /></a></div>
+        <div class="item">
+          <a href="#loki"><img src="./assets/images/funko_loki_destaque.png" alt="Banner destaque Loki com foto dos Lokis"/></a>
+          <a href="#harrypotter"><img src="./assets/images/funko_hp_destaque.png" alt="Banner destaque Harry Potter com os funkos num fundo do castelo"/></a></div>
+        <div class="item"><a href="#dccomics"><img src="./assets/images/funko_dc_destaque.png" alt="Banner destaque DC comic com foto do funko Flash"/></a></div>
+        </div>
+      </section>
+
+      <!-- Promoções -->
+      <section class="section" id="promotions">
+        <br>
+        <h1>Confira nossas promoções</h1>
+        <div class="container grid" id="marvel">
+          <div class="item"><img src="./assets/images/halloween_wanda.png" alt="Funko da Wanda de Halloween"/>
+          <p class="product-name">Halloween Wanda</p><p class="product-price">R$ 79,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/hulk_endgame.png" alt="Funko do Hulk Endgame"/><p class="product-name">Hulk Endgame</p><p class="product-price">R$ 59,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/silver_surfer.png" alt="Funko do Surfista Prateado"/><p class="product-name">Silver Surfer</p><p class="product-price">R$ 69,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/deadpool.png" alt="Funko do Deadpool deitado"/><p class="product-name">Deadpool</p><p class="product-price">R$ 129,90 <a href=#><span class="icon-cart"></span></a></p></div>
+        </div>
+        <div class="container grid" id="dccomics">
+          <div class="item"><img src="./assets/images/katana.png" alt="Funko da Katana"/>
+          <p class="product-name">Katana</p><p class="product-price">R$ 79,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/killer_frost.png" alt="Funko da Killer Frost" /><p class="product-name">Killer Frost</p><p class="product-price" >R$ 59,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/deathstroke.png" alt="Funko do DeathStroke" /><p class="product-name">Deathstroke</p><p class="product-price">R$ 69,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/captain_cold.png" alt="Funko do Capitão Frio / Leonard Snart"/><p class="product-name">Captain Cold</p><p class="product-price">R$ 129,90 <a href=#><span class="icon-cart"></span></a></p></div>
+        </div>
+        <div class="container grid" id="loki">
+          <div class="item"><img src="./assets/images/loki.png" alt="Funko do Loki com a roupa da AVT"/>
+          <p class="product-name">Loki AVT</p><p class="product-price">R$ 79,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/kid_loki.png" alt="Funko do Kid Loki"/><p class="product-name">Kid Loki</p><p class="product-price">R$ 59,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/sylvie.png" alt="Funko do Sylvie" /><p class="product-name">Sylvie</p><p class="product-price">R$ 69,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/mobius.png" alt="Funko do Mobius" /><p class="product-name">Mobius</p><p class="product-price">R$ 129,90 <a href=#><span class="icon-cart"></span></a></p></div>
+        </div>
+        <div class="container grid" id="harrypotter">
+          <div class="item"><img src="./assets/images/luna_lovegood.png" alt="Funko da Luna com a máscara de Leão"/>
+          <p class="product-name">Luna Lovegood</p><p class="product-price">R$ 79,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/cedrico.png" alt="Funko do Cedrico Diggory com roupa de baile" /><p class="product-name"></p>Cedrico Diggory<p class="product-price">R$ 59,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/minerva_mcgonagall.png" alt="Funko da Minerva transformada em gato" /><p class="product-name">Minerva McGonagall</p><p class="product-price">R$ 69,90 <a href=#><span class="icon-cart"></span></a></p></div>
+          <div class="item"><img src="./assets/images/hagrid.png" alt="Funko do Hagrid carregando o bolo de aniversário do Harry" /><p class="product-name">Rúbeo Hagrid</p><p class="product-price">R$ 129,90 <a href=#><span class="icon-cart"></span></a></p></div>
+        </div>
+      </section>
+      
+      <section class="section" id="subscribe">
+        <div class="container">
+          <div class="item"><h2>Cadastre seu email para receber nossas promoções</h2></div>
+          <div class=" item">
+            <form id="form">
+              <div class="inputbox">
+                <input type="email" placeholder="Informe seu melhor email" id='email'>
+              </div>
+              <div class="subbutton">
+                <input type="submit">
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </section>
+   </main>
+
+    <footer class="section" id="footer">     
+      <div class="container grid ">
+        <div class="item left-grid"><a class="logo" href="index.html"
+          ><img src="./assets/images/logo-white.png"
+        /></a> <p>Don't panic! Aqui você encontra o que precisa. Somos uma loja especializada no universo Geek. <br>Não sabemos a pergunta, mas a resposta é 42.  </p></div>
+        <div class="item">
+       </div>
+        
+        <div class="item right-grid"><h3>ENTRE EM CONTATO</h3>
+          <p>Restaurante no Fim do Universo, 42<br> 
+            Douglas Adams City • ArturDent State/RJ</p><br>
+            <p>peixebabel@42store.com.br<br>
+              +55 21 98765-4321</p><br>
+        <div class="social-icons">
+          <a href="#" target="_blank"><div class="icon-instagram"></div></a>
+          <a href="#" target="_blank"><div class="icon-facebook2"></div></a>
+          <a href="#" target="_blank"><div class="icon-whatsapp"></div></a>
+        </div></div>
+      </div>
+      
+      <div class="bottom">
+        Desenvolvido por Tamara Vitorino
+
+      </div>
+
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+   </body>
+</html>
