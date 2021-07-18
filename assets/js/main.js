@@ -27,6 +27,7 @@ form.addEventListener('submit', event => {
   let convertData = JSON.stringify(email)
 
   localStorage.setItem('lead', convertData)
+  alert('Parabéns, seu email foi cadastrado com sucesso!')
 })
 
 // Slider
